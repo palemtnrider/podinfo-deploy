@@ -13,3 +13,17 @@ spec:
     name: podinfo-deploy
   validation: client
 
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: podinfo-deploy
+  namespace: wego-system
+spec:
+  interval: 30s
+  ref:
+    branch: main
+  secretRef:
+    name: weave-gitops-kind-wego-podinfo-deploy
+  url: ssh://git@github.com/palemtnrider/podinfo-deploy.git
+
