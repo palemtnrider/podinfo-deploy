@@ -1,0 +1,12 @@
+apiVersion: weave.works/v1alpha1
+kind: ProfileInstallation
+metadata:
+  creationTimestamp: null
+  name: sample-nginx-profile
+  namespace: default
+spec:
+  source:
+    branch: main
+    path: .
+    url: https://github.com/weaveworks/nginx-profile
+status: {}

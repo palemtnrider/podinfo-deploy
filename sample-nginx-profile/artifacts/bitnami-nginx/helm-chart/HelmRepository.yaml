@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  creationTimestamp: null
+  name: sample-nginx-profile-bitnami-nginx
+  namespace: default
+spec:
+  interval: 0s
+  url: https://charts.bitnami.com/bitnami
+status: {}
