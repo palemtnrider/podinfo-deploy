@@ -15,6 +15,6 @@ spec:
   prune: true
   sourceRef:
     kind: GitRepository
-    name: ""
+    name: "podinfo-deploy"
   targetNamespace: default
 status: {}
