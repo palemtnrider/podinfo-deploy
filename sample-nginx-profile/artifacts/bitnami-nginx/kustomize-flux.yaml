@@ -15,6 +15,7 @@ spec:
   prune: true
   sourceRef:
     kind: GitRepository
-    name: "podinfo-deploy"
+    name: podinfo-deploy
+    namespace: wego-system
   targetNamespace: default
 status: {}
